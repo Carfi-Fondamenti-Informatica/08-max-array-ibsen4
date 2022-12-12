@@ -1,5 +1,12 @@
-#ifndef UNTITLED10_LIB_H
-#define UNTITLED10_LIB_H
-int massimo( float ,int );
-#endif //UNTITLED10_LIB_H
+#include "lib.h"
+int massimo( float a[],int dim) {
+    float max;
+    max = a[0];
+    for (int i = 0; i < dim; i++) {
+        if (a[i] > max) {
+            max = a[i];
+        }
+    }
 
+    return max;
+}
